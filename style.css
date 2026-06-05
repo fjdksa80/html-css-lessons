@@ -1,0 +1,13 @@
+html{
+    background-color: seagreen;
+}
+
+body{
+    background-color:mediumseagreen;
+}
+
+h1{
+    color: white;
+    font-family:monospace;
+    text-shadow: 4px 4px #000000;
+}
