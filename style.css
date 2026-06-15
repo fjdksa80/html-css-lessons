@@ -3,15 +3,18 @@ html{
 }
 
 body{
-    background-color:mediumseagreen;
+    background-color:seagreen;
     color: white;
-    font-family:monospace;
+    font-family: "Ubuntu";
+    text-align: center;
 }
 
 h1{
     color: white;
-    font-family:monospace;
-    text-shadow: 4px 4px #000000;
+    font-family: "Ubuntu";
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 10px black;
+    paint-order: stroke fill;
 }
 
 a {
@@ -25,5 +28,44 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    background-color: seagreen;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    font-size: large;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: seagreen;
+    padding: 10px;
+}
+
+.item{
+    background-color: mediumseagreen;
+    border: 1px solid #000000;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}    
+
+.item2 {
+    background-color: mediumseagreen;
+    border: 1px solid #000000;
+    padding: 20px;
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-column: span 2;
+}
+
+.item3 {
+    background-color: mediumseagreen;
+    border: 1px solid #000000;
+    padding: 20px;
+    align-content: center;
+    text-align: left;
+    grid-column: span 3;
 }
