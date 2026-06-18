@@ -35,10 +35,14 @@ nav li {
 }
 
 .grid-container {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     background-color: seagreen;
     padding: 10px;
+    grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
 }
 
 .item{
@@ -46,19 +50,20 @@ nav li {
     border: 1px solid #000000;
     padding: 20px;
     justify-content: center;
-    align-content: center;
     text-align: center;
+    grid-area: content;
+    grid-column: span 1;
 }    
 
 .item2 {
     background-color: mediumseagreen;
     border: 1px solid #000000;
-    padding: 20px;
     font-size: 30px;
     justify-content: center;
     align-content: center;
     text-align: center;
-    grid-column: span 2;
+    grid-column: span 1;
+    grid-area: header;
 }
 
 .item3 {
@@ -67,5 +72,16 @@ nav li {
     padding: 20px;
     align-content: center;
     text-align: left;
-    grid-column: span 3;
+    grid-column: span 1;
+    grid-area: content;
+}
+
+.item4 {
+    background-color: mediumseagreen;
+    border: 1px solid #000000;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+    grid-column: span 1;
+    grid-area: header;
 }
