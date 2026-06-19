@@ -6,7 +6,6 @@ body{
     background-color:seagreen;
     color: white;
     font-family: "Ubuntu";
-    text-align: center;
 }
 
 h1{
@@ -39,49 +38,33 @@ nav li {
     grid-template-columns: 150px 1fr;
     background-color: seagreen;
     padding: 10px;
-    grid-template-areas:
-        "header header"
-        "menu content"
-        "footer footer";
 }
 
-.item{
+.item {
     background-color: mediumseagreen;
     border: 1px solid #000000;
     padding: 20px;
-    justify-content: center;
     text-align: center;
-    grid-area: content;
-    grid-column: span 1;
-}    
+    align-content: center;
+} 
 
 .item2 {
     background-color: mediumseagreen;
     border: 1px solid #000000;
     font-size: 30px;
-    justify-content: center;
-    align-content: center;
     text-align: center;
-    grid-column: span 1;
-    grid-area: header;
+    align-content: center;
 }
 
 .item3 {
     background-color: mediumseagreen;
     border: 1px solid #000000;
     padding: 20px;
-    align-content: center;
-    text-align: left;
-    grid-column: span 1;
-    grid-area: content;
+    text-align: center;
 }
 
 .item4 {
     background-color: mediumseagreen;
     border: 1px solid #000000;
     padding: 20px;
-    align-content: center;
-    text-align: center;
-    grid-column: span 1;
-    grid-area: header;
 }
