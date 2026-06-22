@@ -1,18 +1,22 @@
-html{
+html {
     background-color: seagreen;
 }
 
-body{
+body {
     background-color:seagreen;
     color: white;
     font-family: "Ubuntu";
 }
 
-h1{
-    color: white;
-    font-family: "Ubuntu";
+h1 {
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 10px black;
+    paint-order: stroke fill;
+}
+
+h3 {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 4px black;
     paint-order: stroke fill;
 }
 
@@ -43,6 +47,7 @@ nav li {
 .item {
     background-color: mediumseagreen;
     border: 1px solid #000000;
+    border-right: 1px solid mediumseagreen;
     padding: 20px;
     text-align: center;
     align-content: center;
@@ -51,6 +56,7 @@ nav li {
 .item2 {
     background-color: mediumseagreen;
     border: 1px solid #000000;
+    border-left: 1px solid mediumseagreen;
     font-size: 30px;
     text-align: center;
     align-content: center;
